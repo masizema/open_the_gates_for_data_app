@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="nl-be" dir="ltr">
+<head>
+<meta charset="utf-8">
+ <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Page Title -->
+	<title>Gentse Feesten</title>
+<!-- /Page title -->
+
+<!-- Favicon ========================================================= -->
+	<link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/icons/touch-icon.ico" type="image/x-icon">
+<!-- /Favicon ========================================================= -->
+
+<!-- >> CSS ============================================================================== -->
+	<!-- Main Styles -->
+	<link href="styles/styles.css" rel="stylesheet">
+    <link href="styles/grid.css" rel="stylesheet">
+    <link href="styles/owl.carousel.css" rel="stylesheet">
+    <link href="images/icons/weather-icons-master/css/weather-icons.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+	<!-- /Main Styles -->
+<!-- >> /CSS ============================================================================== -->
+<style type="text/css">.fancybox-margin{margin-right:0px;}</style>
+</head>
+
+<body id="bodywrap" style="background-color: black;">
+
+    <!-- Page Loade ========================================================= -->
+<div id="preloader">
+	<div id="status">
+		<div class="parent">
+			<div class="child">
+			<img src="images/preloader.gif" alt="preloader" height="100">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="wrapper_loader" class="page-wrapper" style="visibility: hidden;">
+    <!-- /End of Page loade ========================================================= -->
+
+<!-- Heade ================================================== -->
+<header id="header" class="">
+	<div class="container">
+		<!-- MAIN MENU -->
+	    <nav class="">
+	      <ul class="hd-list-menu">
+	        <li class="active"><a href="#main-carousel">Home</a></li>	
+	        <li><a href="#section-event-infos">Info</a></li>
+            <li><a href="#section-about">Gentse Feesten</a></li>
+	        <li><a href="#section-nieuwsbrief">Het Weer</a></li>
+            <li><a href="#section-contact">Contact</a></li>
+	      </ul> 
+	    </nav>
+	    <!-- /MAIN MENU -->
+	</div>	
+</header>
+<!-- /Heade ================================================== -->
+
+
+<div class="page-wrapper">
+	
+	<div id="body-content">
+
+		<!-- Intro
+		================================================== -->
+		<div class="owl-carousel main-carousel owl-theme" id="main-carousel" style="opacity: 1; display: block;">
+
+			<!-- slide -->
+			
+<div class="main-intro" style="background-image: url('images/gentsefeesten.jpg');">
+                <div class="intro-content intro-content-slide1" >
+							<!-- row -->
+							<div class="row">
+								<!-- col -->
+								<div class="col-sm-12">
+									<!-- event logo -->
+									<div class="ic-logo">
+										<img src="images/stadgent.png" alt="">
+									</div>	
+									<!-- /event logo -->
+									<!-- Event Infos -->
+									<div class="ic-infos">
+										<p>15-24 Juli 2016 Gent</p>
+									</div>
+									<!-- /Event Infos -->								
+										<p>- ni neute nie pleuje! -</p>
+                                </div>
+                                <p><a href="#section-quiz" class="btn btn-nobg">QUIZ</a></p>
+                                <a href="#section-schedule" class="btn btn-nobg"><i class="fa fa-calendar"></i> Persoonlijke schema</a>
+                                
+				            </div>
+								<!-- /col -->
+                        <!-- row -->
+                            <div class="row">
+				<div class="intro-content-wrapper viewport" style="min-height: 681px;">
+						<!-- Main Title -->
+						<div class="intro-content nextevent-wrapper intro-content-slide2">
+							<p class="nextevent-title">Volgende event:</p>
+							<!-- nextevent -->
+							<p id="closesteventdata"></p>
+                            <p id="mylocation"></p>
+							<p id="weather-info"></p>
+							<p class="nextevent-title">Mijn favoriete event:</p>
+							<p id="favo_saved"></p>
+
+
+							<div class="element  clearfix col1-3 home grey">
+								<div class="title-heading"><span>Event delen:</span></div>
+								<div class="social-list">
+								<a id="twittershare" href="http://twitter.com/home?status=" class="twitter" >
+                                    <i class="fa fa-twitter"></i> Twitter</a>
+                                
+                                
+								<a  id="facebookshare" href="http://www.facebook.com/sharer.php?u=" class="facebook">
+                                    <i class="fa fa-facebook"></i> Facebook</a>
+                                
+								</div>
+				            </div>
+				        </div>
+
+							<p class="nextevent-title2"> <a href="https://www.youtube.com/watch?v=rxslIEdu1cQautoplay=1" class="fancybox btn"><i class="fa fa-play"></i> Bekijk Video</a> <a href="#section-nieuwsbrief" class="btn btn-nobg"><i class="fa fa-paper-plane"></i> Het weer</a></p>
+						</div>
+						<!-- /Main Title -->
+				</div>	
+                                
+				            </div>
+                        <!-- /row -->
+				</div>
+            </div>
+        
+                
+
+            </div>		
+		<!-- /Intro ================================================== -->
+              
+    
+
+		<!-- Event Infos ================================================== -->
+		<div class="section-event-infos inverted-section" id="section-event-infos">
+                
+		</div>			
+		<!-- /Event Infos ================================================== -->	
+
+		<!-- Event Schedule ================================================== -->
+		<div class="section-schedule" id="section-schedule">
+			<div class="container">
+
+				<!-- Section title -->
+				<div class="section-title-wrapper">
+					<h2 class="title-section"><span class="title-section-bg">Tijdschema<small></small></span></h2>
+				</div>
+				<!-- /Section title -->
+
+
+				
+				<!-- TABS -->
+				<div class="tabs">
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-2 schedule-tab-links-wrapper">
+							<!-- Tab links -->
+							<ul id="day-tab" class="tab-links schedule-tab-links" style="margin-top: -70px;">
+
+
+						    </ul>
+						    <!-- /Tab Links -->
+						</div>
+					</div>
+
+					<div class="row" style="width: 100%; height: 600px;;">
+					<!-- Schedule Tabs -->
+						<div id="tab15" class="schedule-tabs" style="display: none; height: 500px;width: 400px; overflow: auto;">
+							<ul id="day15">
+							</ul>
+						</div>
+						<div id="tab16" class="schedule-tabs" style="display: none;height: 500px;width: 400px; overflow: auto; ">
+							<ul id="day16">
+							</ul>
+						</div>
+						<div id="tab17" class="schedule-tabs" style="display: none;height: 500px;width: 400px; overflow: auto;">
+							<ul id="day17">
+							</ul>
+						</div>
+						<div id="tab18" class="schedule-tabs" style="display: none;height: 500px;width: 400px; overflow: auto; ">
+							<ul id="day18">
+							</ul>
+						</div>
+						<div id="tab19" class="schedule-tabs" style="display: none;height: 500px;width: 400px; overflow: auto; ">
+							<ul id="day19">
+							</ul>
+						</div>
+						<div id="tab20" class="schedule-tabs" style="display: none;height: 500px;width: 400px; overflow: auto; ">
+							<ul id="day20">
+							</ul>
+						</div>
+						<div id="tab21" class="schedule-tabs" style="display: none;height: 500px;width: 400px; overflow: auto; ">
+							<ul id="day21">
+							</ul>
+						</div>
+						<div id="tab22" class="schedule-tabs" style="display: none;height: 500px;width: 400px; overflow: auto; ">
+							<ul id="day22">
+							</ul>
+						</div>
+						<div id="tab23" class="schedule-tabs" style="display: none;height: 500px;width: 400px; overflow: auto; ">
+							<ul id="day23">
+							</ul>
+						</div>
+						<div id="tab24" class="schedule-tabs" style="display: none;height: 500px;width: 400px; overflow: auto; ">
+							<ul id="day24">
+							</ul>
+						</div>
+					</div>
+
+				</div>
+				<!-- /TABS -->
+							
+			</div>
+		</div>
+		<!-- /Event Schedule ================================================== -->
+        
+        <!-- Gentse Feesten ================================================== -->
+		<div class="section-about" id="section-about">
+			<div class="container-fluid">
+				<div class="row">
+					<!-- Left Column -->
+					<div class="about-picture-wrapper">
+						<div class="about-picture" id="about-picture">
+							<img src="images/eretribune.jpg" alt="" class="responsive-image">
+						</div>
+					</div>				
+					<!-- /Left Column -->
+					<!-- Right Column -->
+					<div class="about-text-wrapper"> 
+						<div class="about-text" id="about-text">
+							<h1 class="title3 title-border">Gentse Feesten 1843 - 2016</h1>
+							<div class="about-text-content">
+								<p>De Gentse Feesten zijn na bijna 173 jaar uitgegroeid tot één van de grootste culturele festivals in Europa met nationale en internationale artiesten, gratis muziek op meer dan 10 pleinen, kinderanimatie op verschillende locaties in de stad en honderden binnen- en buitenactiviteiten. De totale oppervlakte van de Feestenzone bedraagt dan ook 765.000 m2.
+
+De Gentse Feesten kan men niet een éénduidig profiel aanmeten. Dit festival kan zowel als een stadsfestival, een cultureel evenement en een groot volksfeest beschouwd worden.
+
+De Gentse Feesten zijn sinds hun ontstaan in 1843 gratis, wat naast de diversiteit ervoor zorgt dat de lage drempel behouden blijft. De voorbije jaren steeg het aantal bezoekers sterk. De laatste jaren mocht de binnenstad telkens ruim 1.3 miljoen bezoekers verwelkomen, met een bezoekersaantal van meer dan 100.000 bezoekers per dag.
+
+Er is een groot verloop van de ene locatie naar de andere, er zijn gewone sfeerzoekers en er zijn heel gerichte doelbezoekers.</p>
+							</div>							
+							<a href="#section-schedule" class="btn btn-nobg"><i class="fa fa-calendar"></i> Persoonlijke schema</a> <a href="#section-nieuwsbrief" class="btn btn-nobg"><i class="fa fa-paper-plane"></i> Het weer</a>
+						</div>
+					</div>
+					<!-- /Right Column -->
+				</div>
+			</div>
+		</div>
+		<!-- /Gentse Feesten ================================================== -->
+
+
+		<!-- Het Weer ================================================== -->
+		<div class="section-weer section-padding inverted-section2" id="section-weer" style="height: 700px;">
+			<div class="container">
+
+				<!-- Section title -->
+					<h2 class="title-section" style="color: #3e4651; margin: center; padding-top: 680px;">Het Weer</h2>
+				<!-- /Section title -->
+
+				<div id="weer-itens-container" class="owl-carousel owl-theme weather_placement" style="opacity: 1; display: block;">
+
+
+				</div>
+
+			</div>
+		</div>
+		<!-- /Het Weer ================================================== -->
+
+
+		<!-- Nieuwsbrief ================================================== -->
+		<div class="section-nieuwsbrief inverted-section2 section-padding" id="section-nieuwsbrief">
+			<div class="container">
+            
+				<!-- Section title -->
+				<div class="section-title-wrapper">
+					<h2 class="title-section"></h2>
+					
+				</div>				
+				<!-- /Section title -->	
+				<div class="row row-nopr">
+					<form id="register-form" method="post" class="form register-form" novalidate="novalidate">
+						<div class="col-sm-3">
+							<input name="name" id="name" type="text" class="form-control" placeholder="Name" required="">
+						</div>
+						<div class="col-sm-3">
+							<input name="email" id="email" class="form-control" type="email" placeholder="Email" required="">
+						</div>
+						<div class="col-sm-3">
+							<input name="telephone" id="telephone" class="form-control" type="tel" placeholder="Telephone">
+						</div>
+						<div class="col-sm-3">
+							<input type="submit" class="btn2 btn-default btn-form" name="submit" value="Abonneren">
+						</div>
+						<input type="hidden" value="New Event Register!" name="subject" id="subject">
+					</form>
+				</div>
+			</div>	
+		</div>
+		<!-- /Nieuwsbrief ================================================== -->
+
+		<!-- Map ================================================== -->
+		<div class="container-fluid">
+			<div class="row" style="margin: 50px;">
+				<a id="mylocationButton" class="btn btn-nobg">Mijn Lokatie</a>
+				<a id="showeventsButton" class="btn btn-nobg">Toon Events</a>
+				<a id="showParkingsButton" class="btn btn-nobg">Toon Parkings</a>
+                
+			</div>
+			<div class="row">
+				<div class="map" id="map" style="height: 500px;">
+				</div>
+			</div>			
+		</div>
+		<!-- /Map ================================================== -->
+    
+        <!-- Quiz ================================================== -->
+		<div class="section-quiz section-padding section-bg-left" id="section-quiz" style="padding-left: 150px;">
+			<div class="container" style="margin-left:-60px;">
+				<div id='title'>
+					<h1>Quiz</h1>
+				</div>
+				<br/>
+				<div id='quiz'></div>
+				<div class="btn btn-nobg" id='prev'><a href='#'>Prev</a></div>
+                <div class="btn btn-nobg" id='next'><a href='#'>Next</a></div>
+				<div class="btn btn-nobg" id='start'> <a href='#'>Start Over</a></div>
+			</div>
+				
+			</div>
+
+		</div>
+		<!-- /Quiz ================================================== -->
+    
+        <!-- Contact ================================================== -->
+		<div class="section-contact inverted-section2 section-padding " id="section-contact" >
+			<div class="container">
+				<!-- Section title -->
+				<div class="section-title-wrapper">
+					<h2 class="title-section">Contact</h2>
+				</div>
+				<!-- /Section title -->
+
+
+				<div class="contact-list-wrapper">
+					<div class="contact-list" style="margin-left:100px; display: block;">
+						<!-- item -->
+						<form id="contactpost" method="post" action="contact.php">
+							<label for="name">Naam:</label>
+							<input type="text" name="name" id="nameform"><br>
+							<br>
+							<label for="email">Email:</label>
+							<input type="text" name="email" id="emailfrom"><br>
+							<br>
+							<label for="message">Bericht:</label><br>
+							<textarea name="text" rows="10" cols="30" id="Message"></textarea><br>
+							<br>
+							<input type="submit" name="submit" value="Verstuur" class="submit-button">
+						</form>
+						<!-- /item -->
+					<div class="owl-controls clickable"><div class="owl-pagination"><div class="owl-page active"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div></div></div></div>
+				</div>	
+			</div>				
+		</div>
+		<!-- /Contact ================================================== -->
+    
+	</div>
+
+        
+
+<!-- Footer ================================================== -->
+<footer id="footer" class="jumb-footer">
+	<div class="container">
+		<!-- row -->
+		<div class="row">
+			<!-- col -->
+			<div class="col-sm-6">
+                <p>"Deze site is niet gemaakt voor commerciële doeleinden" </p>
+			</div>
+			<!-- /col -->
+			<!-- col -->
+			<div class="col-sm-6 text-right">
+				<!-- Social Icons -->
+				<div class="footer-social-icons">
+					<a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+					<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+					<a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+				</div>
+				<!-- /Social Icons -->
+			</div>
+			<!-- /col -->
+		</div>
+		<!-- /row -->
+	</div>	
+</footer>
+<!-- /Footer ================================================== -->
+
+<!-- >> JS ============================================================================== -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbek9zV99Q-VJnlx5O6ZKaSywHoB0EA0o&callback=initMap" async defer></script>
+<script type="text/javascript" src="scripts/data.js"></script>
+<script type="text/javascript" src="scripts/map.js"></script>
+<script type="text/javascript" src="scripts/functions.js"></script>
+<script type="text/javascript" src="scripts/quiz.js"></script>
+<script type="text/javascript" src="scripts/owl.carousel.js"></script>
+
+
+<!-- >> /JS ============================================================================= -->
+
+</body>
+</html>
